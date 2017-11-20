@@ -1,0 +1,139 @@
+.container h2 {
+    color:aliceblue;
+}
+
+.container form .btn:hover {
+    background-color: #3578DA;
+    color:lime;
+}
+
+form input {
+    font-family: sans-serif;
+}
+
+#la {
+    color:lime;
+}
+
+#term {
+    color:black;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width:374px) {
+    #ageTwo {
+        width:50%;
+        margin-left:24.7%;
+        margin-top: -5%;
+        margin-bottom: -8%;
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width:413px) {
+    #ageTwo {
+        width:50%;
+        margin-left:24.7%;
+        margin-top: -5%;
+        margin-bottom: -8%;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width:767px) {
+    #ageTwo {
+        width:50%;
+        margin-left:24.7%;
+        margin-top: -5%;
+        margin-bottom: -8%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container form input {
+        width:50%;
+        margin-left: 25%;
+    }
+    
+    .container h2 {
+        font-size: 2em;
+    }
+    
+    .container form .btn {
+        width: 20%;
+        background-color:skyblue;
+        margin-left:-1%;
+    }
+    
+    #ageTwo {
+        width:30%;
+        margin-left:35%;
+        margin-top: -2%;
+        margin-bottom: -3%;
+    }
+}
+ 
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .container form input {
+        width:42%;
+        margin-left: 29%;
+    }
+    
+    .container h2 {
+        font-size: 2em;
+    }
+    
+    .container form .btn {
+        width: 20%;
+        background-color:skyblue;  
+    }
+    
+    #ageTwo {
+        width: 25%;
+        margin-left: 38%;
+        margin-bottom: -2%;
+    }
+    
+    footer {
+        margin-top: 17.5%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .container form input {
+        width:42%;
+        margin-left: 28%;
+    }
+    
+    .container h2 {
+        font-size: 2em;
+    }
+    
+    .container form .btn {
+        width: 25%;
+        background-color:skyblue;
+    }
+    
+    #ageTwo {
+        width: 20%;
+        margin-left: 40%;
+        margin-bottom: -2.5%;
+        
+    }
+}
+    
+    
+}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One|Philosopher|BenchNine');
+
+
+body {
+font-family: 'BenchNine', sans-serif;
+font-size: 20px;
+color:black;
+background-color: #1abc9c;
+
+}
+
+.jumbotron p a {
+    text-decoration: none;
+}
+
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+
+.bg-1 {
+background-color: #1abc9c;
+color:aliceblue;
+}
+
+.bg-2 {
+background-color: #0c0458;
+color:aliceblue;
+}
+
+.bg-3 {
+background-color: #ffffff;
+color:black;
+}
+
+.bg-3 a {
+text-decoration: none;
+color:black;
+}
+
+.bg-3 a:hover {color: #1abc9c;}
+
+.bg-4 { 
+background-color: #2f2f2f; /* Black Gray */
+color: #fff;
+  }
+
+.container-fluid {
+padding-top: 70px;
+padding-bottom: 70px;
+}
+
+.jumbotron {background-color: #670aa0;}
+
+.jumbotron p {
+font-family: 'Unica One', cursive;
+font-size: 3em;
+cursor: default;
+}
+
+.bg-2 h3 span {color: yellow;}
+
+.bg-2 p {font-size: 24px; color: #7cb0ec;}
+
+.bg-2 p span {color: red;}
+
+#log h5 {cursor: default; color:azure; font-size: 0.8em;}
+
+#log a {
+font-size: 13px;
+text-decoration: none;
+color:aliceblue;
+font-family:sans-serif;
+}
+
+#log a:hover {color:yellow;}
+
+.form-group {font-family: 'Unica One', cursive;}
+
+#go {padding: 5px 50px 5px 50px;}
+
+
+/*******MISCELLANEOUS*******/
+
+z {
+    color: #0453af;
+}
+
+la {
+    color: #04af4a;
+}
+
+v {
+    color:  #f8255b;
+}
+
+w {
+    color: #f8ab25;
+}
+
+u {
+    color: aliceblue;
+}
+
+u:hover {
+    color: red;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*******modals********/
+
+.modal-header h4, 
+.modal-body p, 
+.modal-body h4, 
+.modal-body ul, 
+.modal-body figcaption {
+color:black;
+}
+
+.form-group label {
+color:black;
+font-family: 'BenchNine', sans-serif;
+font-weight: 100;
+}
+
+.form-group textarea {
+font-family: sans-serif;
+}
+
+.form-group select, option {
+font-family: sans-serif;
+}
+
+#loginname input, #loginpwd input {
+font-family: sans-serif;
+}
+
+.btn-success {
+width:50%;
+font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 768px){
+    .col-sm-4 img {
+        display:none;
+    }
+}
+
