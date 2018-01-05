@@ -1,14 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['email'])){
-    header('Location: index.php');
-}
-
-
-
-?>
-
-
 
 
 <!DOCTYPE html>
@@ -18,8 +7,8 @@ if (!isset($_SESSION['email'])){
     <title>Document</title>
 </head>
 <body>
-    <p>You are logged in</p> <br>
     
+    <p>This area is under construction</p>
     
     
     

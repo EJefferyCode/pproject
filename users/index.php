@@ -1,47 +1,4 @@
-<?php
-
-session_start();
-$output = NULL;
-
-//check form
-if(isset($_POST['SUBMIT'])) {
-    $email    = $_POST['email'];
-    $password = $_POST['password'];
-    
-    if(empty($email) || empty($password)) {
-        $output = "<p>Please Fill In All Fields</p>";
-    } else {
-        //connect to db server
-        $connect = new mysqli('localhost', 'root', 'root', 'plantr');
-        $email = $connect->real_escape_string($email);
-        $password = $connect->real_escape_string($password);
-        
-        $query = $connect->query("SELECT id FROM user WHERE email = '$email' AND password = md5('$password')");
-            
-        if($query->num_rows === 0) {
-            $output = "Invalid email and/or password. Please try again.";
-        } else {
-            
-            //successful login
-            $_SESSION['loggedin'] = TRUE;
-            $_SESSION['email'] = $email;
-          
-            
-          
-            
-             
-        }
-    }
-}
-
-
-echo $output;
-
-
-?>
-
-
-
+<?php include('../includes/login-script.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,15 +14,21 @@ echo $output;
 <body>
    <!--Login-->
    
- 
-   
-   
     <div class="container text-center" id="log">
         <h5>Already A Member? Login Here</h5>
         <form class="form-inline" method="POST">
+<!--
             <div class="form-group" id="loginname">
                 <input type="email" class="form-control" id="text" placeholder="Email" name="email">
             </div>
+            <br>
+            <i>OR</i>
+-->
+            
+            <div class="form-group" id="loginname">
+                <input type="text" class="form-control" id="text" placeholder="Username" name="nickname">
+            </div>
+            
             
             <div class="form-group" id="loginpwd">
                <input type="password" class="form-control" id="pwd" placeholder="Password" name="password">
@@ -74,11 +37,9 @@ echo $output;
             <br>
             
             <div class="checkbox">
-              <label><input type="checkbox" name="remember"> Remember me</label>
+              <label><input type="checkbox" name="remember"> keep me logged in</label>
             </div>
-            
             <br>
-            
             <button type="submit" class="btn btn-default" id="go" name="SUBMIT">Go</button> 
         </form>
         <a href="#">Forgot Account?</a>
@@ -88,7 +49,6 @@ echo $output;
    <!----jumbo header---->
    <?php include('../includes/header.php'); ?>
 
-   
     <!--container 1-->
     
     <div class="container-fluid bg-1 text-center">
@@ -105,6 +65,7 @@ echo $output;
     
     <!--container 3-->
     <div class="container-fluid bg-3 text-center">    
+     <h3 class="margin">Check Out The Forums <a href="/users/forum.php">click here</a></h3>
   <h3 class="margin">Ready To Join? <a href="/users/registration.php">click here</a></h3><br>
   <div class="row">
     <div class="col-sm-4">
@@ -116,7 +77,7 @@ echo $output;
       <img src="/images/100.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236" id="img2"> 
     </div>
     <div class="col-sm-4"> 
-      Blog<br>Have Fun<br>Connect With Likeminded People
+      Join Forums<br>Find Something Interesting<br>Connect With Likeminded People
       <img src="/images/earth.jpg" class="img-rounded" alt="Cinque Terre" width="280" height="236" id="img3"> 
     </div>
   </div>
